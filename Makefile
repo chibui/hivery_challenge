@@ -15,9 +15,8 @@ setup:
 	test -d $(VIRTUAL_ENV) || virtualenv -p python3 $(VIRTUAL_ENV)
 	$(VIRTUAL_ENV)/bin/pip install -Ur requirements.txt
 
-	
 run: setup 
-	./run.py 
+	./run.py
 
 clean:
 	rm -rf $(VIRTUAL_ENV)
