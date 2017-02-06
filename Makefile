@@ -16,7 +16,7 @@ setup:
 	$(VIRTUAL_ENV)/bin/pip install -Ur requirements.txt
 
 run: setup 
-	./run.py
+	./run.py & npm start
 
 clean:
 	rm -rf $(VIRTUAL_ENV)
