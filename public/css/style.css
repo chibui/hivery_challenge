@@ -45,20 +45,22 @@ body {
 
 /* search bar */
 #imaginary_container {
-    margin-top: 10%;
+    margin-top: 2%;
 }
 .stylish-input-group .input-group-addon {
     background: white
 }
-.stylish-input-group .form-control {
+.stylish-input-group .form-control, i {
   border-right:0; 
   box-shadow:0 0 0; 
   border-color:#ccc;
+  color: #ccc;
 }
 .stylish-input-group button {
     border:0;
     background:transparent;
 }
+
 
 /*table*/
 .table-hover td {
@@ -87,20 +89,13 @@ input {
 }
 input:focus {
   outline:none;
-  border-color:#aaa;
+  border-color:black;
 }
-.sort {
-  padding:8px 30px;
-  border-radius: 6px;
-  border:none;
-  display:inline-block;
-  color:#fff;
-  text-decoration: none;
-  background-color: #28a8e0;
+.table thead tr th {
+  padding-bottom:  0px; 
 }
 .sort:hover {
   text-decoration: none;
-  background-color:#1b8aba;
 }
 .sort:focus {
   outline:none;
@@ -111,9 +106,9 @@ input:focus {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
+/*  border-top: 5px solid transparent;
   content:"";
-  position: relative;
+*/  position: relative;
   top:-10px;
   right:-5px;
 }
@@ -122,7 +117,7 @@ input:focus {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #fff;
+  border-top: 5px solid black;
   content:"";
   position: relative;
   top:4px;
@@ -133,7 +128,7 @@ input:focus {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid black;
   content:"";
   position: relative;
   top:-4px;

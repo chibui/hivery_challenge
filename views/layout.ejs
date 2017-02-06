@@ -7,8 +7,8 @@
     <!-- bootstrap-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  <link rel="stylesheet" href="/css/style.css">
     <!-- jquery -->
-<!--     // <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    // <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -24,29 +24,26 @@
             </button>
             <a class="navbar-brand" href="/"><img src="../images/hivery-logo.jpg" alt="Powered by Hivery"></a>
           </div>
-          
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-left">
-            </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Benjamin Harman</a></li>
+              <div class="row" style="padding-top: 5px">
+                <li>Benjamin Harman</li>
+                  <li><a href="#">Account</a>&nbsp;&nbsp;<a href="#">Logout</a></li>
+              </div>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
     </div><!--/.container-fluid -->
-
     <!-- main -->
     <main id="site-main">
       <div class="container-fluid">
         <%- body %>      
       </div>
     </main>
-
     <!-- footer -->
     <footer id="site-footer">
       Copyright &copy; Hivery
     </footer>
-
   </body>
 </html>
