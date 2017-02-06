@@ -20,6 +20,7 @@ We need to be able to run your code through these steps:
 2) cd <your project>
 3) run command to install dependencies
 4) run command to execute the application
+
 - please use 'make run' to run
 
 To simplify, you can consider that we have installed in our machine python, Node, Gulp
