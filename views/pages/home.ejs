@@ -1,0 +1,43 @@
+<div class="heading">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Saved Planograms</h1>
+    </div>
+    <div class="col-md-3 col-sm-offset-3">
+        <div id="imaginary_container"> 
+            <div class="input-group stylish-input-group">
+                <input type="text" class="form-control"  placeholder="Search">
+                <span class="input-group-addon">
+                    <button type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>  
+                </span>
+            </div>
+        </div>
+    </div>
+  </div>
+</div> 
+<div class="container-fluid">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Markets</th>
+          <th>Author</th>
+          <th>Created</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (var data of data) { %> 
+      <tr>
+          <td><%= data.number %></td>
+          <td><%= data.name %></td>
+          <td><%= data.markets %></td>
+          <td><%= data.author %></td>
+          <td><%= data.created %></td>
+      </tr>
+    <% } %>
+    </tbody>
+  </table>
+</div>

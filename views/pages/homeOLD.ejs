@@ -1,0 +1,46 @@
+<div class="heading">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Saved Planograms</h1>
+    </div>
+    <div class="col-md-3 col-sm-offset-3">
+        <div id="imaginary_container"> 
+            <div class="input-group stylish-input-group">
+                <input type="text" class="form-control"  placeholder="Search">
+                <span class="input-group-addon">
+                    <button type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>  
+                </span>
+            </div>
+        </div>
+    </div>
+  </div>
+</div> 
+
+<div class="container-fluid">
+  <table class="table table-hover">
+    <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Markets</th>
+        <th>Created</th>
+        <th>Author</th>
+    </tr>
+    <script type="text/javascript">
+    $(document).ready(function () {
+          var json = [{"number": "04114", "name": "EP Countertop Long_v2", "markets": "Elementary Schools,Primary", "created": "19 minutes ago", "author": "Art Hufnagel"}, {"number": "128873", "name": "Wide Double Door Frontside Lipsum", "markets": "Elementary Schools,Primary", "created": "Today, 9:12am", "author": "Rachel Dahlberg"}, {"number": "667888", "name": "LM single stacked side access", "markets": "Elementary Schools,Primary", "created": "Today, 8:30am", "author": "Erinda Scarlett"}, {"number": "284658", "name": "FS Short Double Door Frontside", "markets": "Elementary Schools,Primary", "created": "Yesterday, 6:53pm", "author": "Vertie Provencal"}, {"number": "193759", "name": "Single Door Frontside Lipsum", "markets": "Shooping mall, Primary", "created": "Tuesday, 10:02pm", "author": "Latina Tutt"}, {"number": "184657", "name": "EP Countertop Long_v2", "markets": "Shooping mall, Primary", "created": "Dec 1, 8:35pm", "author": "Halley Meggs"}, {"number": "285637", "name": "Two Door Frontside Lipsum", "markets": "Shooping mall, Primary", "created": "Nove 30, 7:42pm", "author": "Jeane Waldorf"}, {"number": "048114", "name": "EP Countertop Long_v2", "markets": "Elementary Schools,Primary", "created": "Nov 24, 10:53pm", "author": "Victorina Aguero"}, {"number": "128873", "name": "FS short Double Door Frontside", "markets": "Shooping mall, Primary", "created": "Nov 24, 9:04am", "author": "Javier Brandenburg"}];
+          var tr;
+          for (var i = 0; i < json.length; i++) {
+              tr = $('<tr/>');
+              tr.append("<td>" + json[i].number + "</td>");
+              tr.append("<td>" + json[i].name + "</td>");
+              tr.append("<td>" + json[i].markets + "</td>");
+              tr.append("<td>" + json[i].author + "</td>");
+              tr.append("<td>" + json[i].created + "</td>");
+              $('table').append(tr);
+          }
+      });
+    </script>
+  </table>
+</div>
